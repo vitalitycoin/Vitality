@@ -1,0 +1,26 @@
+# /etc/conf.d/Vitalityd: config file for /etc/init.d/Vitalityd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/Vitality/Vitality.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/Vitalityd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/Vitalityd.pid"
+
+# Where to write Vitalityd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/Vitalityd"
+
+# User and group to own Vitalityd process
+#BITCOIND_USER="Vitality"
+#BITCOIND_GROUP="Vitality"
+
+# Path to Vitalityd executable
+#BITCOIND_BIN="/usr/bin/Vitalityd"
+
+# Nice value to run Vitalityd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

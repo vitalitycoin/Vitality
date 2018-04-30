@@ -1,0 +1,26 @@
+[Unit]
+Description=Vitality's distributed currency daemon
+After=network.target
+
+[Service]
+User=Vitality
+Group=Vitality
+
+Type=forking
+PIDFile=/var/lib/Vitalityd/Vitalityd.pid
+
+ExecStart=/usr/bin/Vitalityd -daemon -pid=/var/lib/Vitalityd/Vitalityd.pid \
+          -conf=/etc/Vitality/Vitality.conf -datadir=/var/lib/Vitalityd
+
+ExecStop=-/usr/bin/Vitality -conf=/etc/Vitality/Vitality.conf \
+         -datadir=/var/lib/Vitalityd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

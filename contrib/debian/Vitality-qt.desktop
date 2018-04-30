@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Vitality
+Comment=Vitality P2P Cryptocurrency
+Comment[fr]=Vitality, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Vitality, eşten eşe kriptografik sanal para birimi
+Exec=Vitality-qt %u
+Terminal=false
+Type=Application
+Icon=Vitality128
+MimeType=x-scheme-handler/Vitality;
+Categories=Office;Finance;
